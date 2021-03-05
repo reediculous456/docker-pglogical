@@ -1,4 +1,5 @@
-FROM postgres:12
+ARG POSTGRESQL_MAJOR_VERSION=12
+FROM postgres:${POSTGRESQL_MAJOR_VERSION}
 
 RUN apt install postgresql-common -y
 RUN sh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y
