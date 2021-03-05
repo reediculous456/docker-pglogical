@@ -16,5 +16,3 @@ RUN echo "wal_level = 'logical'" >> /usr/share/postgresql/postgresql.conf.sample
 
 RUN echo "host    replication          postgres                172.18.0.0/16   trust" >> /usr/share/postgresql/${POSTGRESQL_MAJOR_VERSION}/pg_hba.conf.sample && \
     echo "host    replication          postgres                ::1/128         trust" >> /usr/share/postgresql/${POSTGRESQL_MAJOR_VERSION}/pg_hba.conf.sample
-
-CMD [ "postgres" ]
