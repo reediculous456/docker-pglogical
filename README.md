@@ -5,6 +5,7 @@ A docker image that includes pglogical
 - [Wesley Reed](https://github.com/reediculous456)
 - [Paul Wilson](https://github.com/wilsonpg)
 - [Vivek Kunapareddy](https://github.com/kunapavk)
+- [Isac Casapu](https://github.com/yitzikc)
 
 # Use
 - Start a container of this image
