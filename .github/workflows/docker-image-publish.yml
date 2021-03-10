@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        postgres: [9.6, 10, 11, 12, 13]
+        postgres: [9.6, 10, 11, 12, 13, latest]
 
     steps:
       - name: Set up QEMU
