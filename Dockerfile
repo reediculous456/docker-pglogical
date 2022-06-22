@@ -2,7 +2,7 @@ ARG POSTGRESQL_MAJOR_VERSION=12
 FROM postgres:${POSTGRESQL_MAJOR_VERSION}
 
 RUN apt-get update && \
-    apt-get install --no-install-recommends -y postgresql-common && \
+    DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y postgresql-common && \
     sh /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y && \
     apt-get install --no-install-recommends -y postgresql-${PG_MAJOR}-pglogical && \
     rm -rf /var/lib/apt/lists/*
